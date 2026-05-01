@@ -1,0 +1,13 @@
+{
+  "itemGroup.dauntless": "Example Mod Tab",
+  "block.dauntless.example_block": "Example Block",
+  "item.dauntless.example_item": "Example Item",
+
+  "dauntless.configuration.title": "Dauntless Configs",
+  "dauntless.configuration.section.dauntless.common.toml": "Dauntless Configs",
+  "dauntless.configuration.section.dauntless.common.toml.title": "Dauntless Configs",
+  "dauntless.configuration.items": "Item List",
+  "dauntless.configuration.logDirtBlock": "Log Dirt Block",
+  "dauntless.configuration.magicNumberIntroduction": "Magic Number Text",
+  "dauntless.configuration.magicNumber": "Magic Number"
+}
