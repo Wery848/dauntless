@@ -1,5 +1,7 @@
 package io.github.wery.dauntless;
 
+import io.github.wery.dauntless.attachedData.SensusStat;
+import net.neoforged.bus.EventBus;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -50,6 +52,8 @@ public class Dauntless {
         // Note that this is necessary if and only if we want *this* class (Dauntless) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
+
+        SensusStat.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
