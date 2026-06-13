@@ -16,10 +16,9 @@ import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 public class DauntlessEvents {
     @SubscribeEvent
     public static void onLivingDeathEvent(LivingDeathEvent event) {
-        if(event.getEntity() instanceof ServerPlayer) {
+        if(event.getEntity() instanceof ServerPlayer player) {
             // If a player dies, his Sensus is checked,
             // if his Sensus is 0 or lower, the player is set to spectator mode
-            ServerPlayer player = (ServerPlayer) event.getEntity();
             if(player.getData(SensusStat.SENSUS) <= 0) {
             PlayerList playerlist = player.level().getServer().getPlayerList();
                 playerlist.getPlayer(player.getUUID()).setGameMode(GameType.SPECTATOR);
