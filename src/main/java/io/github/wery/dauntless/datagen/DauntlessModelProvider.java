@@ -17,5 +17,6 @@ public class DauntlessModelProvider extends ModelProvider {
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
         itemModels.generateFlatItem(DauntlessItems.SENSUS.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(DauntlessItems.RIPPER.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModels.generateFlatItem(DauntlessItems.ACTIVATED_RIPPER.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
     }
 }

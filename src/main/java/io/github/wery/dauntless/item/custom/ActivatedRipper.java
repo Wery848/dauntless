@@ -7,10 +7,10 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import org.apache.commons.lang3.ObjectUtils;
 
-public class Ripper extends Item {
-    public Ripper(Properties properties) {
+public class ActivatedRipper extends Item {
+
+    public ActivatedRipper(Properties properties) {
         super(properties);
     }
 
@@ -33,4 +33,5 @@ public class Ripper extends Item {
     public boolean isDamageable(ItemStack stack) {
         return true;
     }
+
 }
