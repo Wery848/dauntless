@@ -7,6 +7,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import org.jetbrains.annotations.NotNull;
 
 public class ActivatedRipper extends Item {
 
@@ -15,7 +16,7 @@ public class ActivatedRipper extends Item {
     }
 
     @Override
-    public boolean onLeftClickEntity(ItemStack stack, Player player, Entity entity) {
+    public boolean onLeftClickEntity(@NotNull ItemStack stack, @NotNull Player player, @NotNull Entity entity) {
         if(entity instanceof Player targetplayer) {
             // Hurt and break tool
             stack.hurtAndBreak(1, player, player.getUsedItemHand());
@@ -30,7 +31,7 @@ public class ActivatedRipper extends Item {
     }
 
     @Override
-    public boolean isDamageable(ItemStack stack) {
+    public boolean isDamageable(@NotNull ItemStack stack) {
         return true;
     }
 

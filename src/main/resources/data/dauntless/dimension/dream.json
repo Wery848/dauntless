@@ -1,0 +1,11 @@
+{
+    "type": "dauntless:dream",
+    "generator": {
+        "type": "noise",
+        "biome_source": {
+            "type": "fixed",
+            "biome": "dauntless:dream"
+        },
+        "settings": "floating_islands"
+    }
+}

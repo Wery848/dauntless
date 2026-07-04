@@ -1,0 +1,33 @@
+{
+    "has_precipitation": false,
+    "temperature": 0.8,
+    "downfall": 0.4,
+    "effects": {
+        "water_color": 16777215
+    },
+    "carvers": [],
+    "features": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+    ],
+    "spawners": {
+        "creature": [
+            {
+                "type": "minecraft:sheep",
+                "maxCount": 16,
+                "minCount": 16,
+                "weight": 16
+            }
+        ]
+    },
+    "spawn_costs": {}
+}
